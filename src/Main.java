@@ -16,12 +16,14 @@ public class Main {
             }
         }
         System.out.println();
+        System.out.println();
         for (int i = 0; i < fractionalDigits.length; i++) {
             System.out.print(fractionalDigits[i]);
             if (i < fractionalDigits.length - 1) {
                 System.out.print(",");
             }
         }
+        System.out.println();
         System.out.println();
         for (int i = 0; i < freeArray.length; i++) {
             System.out.print(freeArray[i]);
@@ -30,12 +32,14 @@ public class Main {
             }
         }
         System.out.println();
+        System.out.println();
         for (int i = digits.length - 1; i >= 0; i--) {
             System.out.print(digits[i]);
             if (i > 0) {
                 System.out.print(",");
             }
         }
+        System.out.println();
         System.out.println();
         for (int i = fractionalDigits.length - 1; i >= 0; i--) {
             System.out.print(fractionalDigits[i]);
@@ -44,26 +48,28 @@ public class Main {
             }
         }
         System.out.println();
+        System.out.println();
         for (int i = freeArray.length - 1; i >= 0; i--) {
             System.out.print(freeArray[i]);
             if (i > 0) {
                 System.out.print(",");
             }
         }
-
-        int[] even = new int[3];
+        System.out.println();
         for (int i = 0; i < digits.length; i++) {
             if (digits[i] % 2 != 0) {
-                even[i] = digits[i] += 1;
-
+                digits[i] += 1;
+                System.out.print(digits[i]);
+            } else {
+                System.out.print(digits[i]);
+            }
+            if (i < digits.length - 1) {
+                System.out.print(",");
             }
 
-            even[i] = digits[i];
 
         }
-        System.out.println();
-        String c = Arrays.toString(even);
-        System.out.println(c);
+
     }
 }
 
