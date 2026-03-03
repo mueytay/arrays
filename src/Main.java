@@ -55,21 +55,21 @@ public class Main {
                 System.out.print(",");
             }
         }
-
-        int[] even = new int[3];
+        System.out.println();
         for (int i = 0; i < digits.length; i++) {
             if (digits[i] % 2 != 0) {
-                even[i] = digits[i] += 1;
-
+                digits[i] += 1;
+                System.out.print(digits[i]);
+            } else {
+                System.out.print(digits[i]);
+            }
+            if (i < digits.length - 1) {
+                System.out.print(",");
             }
 
-            even[i] = digits[i];
 
         }
-        System.out.println();
-        System.out.println();
-        String c = Arrays.toString(even);
-        System.out.println(c);
+
     }
 }
 
